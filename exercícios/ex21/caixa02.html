@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color:#EF954B;
+            font-family: Arial, Helvetica, sans-serif; 
+            margin: 0;
+        }
+        header{
+            background-color: #FAB280;
+            padding: 10px;
+            margin: 10px;
+
+        }
+        main{
+            background-color:bisque;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.425);
+            
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            text-decoration: solid;
+            padding:5px;
+            margin: 0px;
+        }
+
+        article{
+            background-color: bisque;
+        }
+       article > aside{
+        background-color: rgb(89, 91, 92);
+        text-decoration: underline;
+        color: white;
+        padding: 5px;
+       }
+        h1{
+            box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.521);
+        }
+        nav{
+            background-color: #fcfbfa;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.253);
+            }
+        nav > a{
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 30px;
+        }    
+        nav > a:hover{
+            text-decoration: underline;
+            background-color: darkgrey;
+
+        }
+
+        div#bola{
+            background-color: black;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>  <!-- Cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">História</a>
+            <a href="#">Autores</a>
+            <a href="#">Quem Somos</a>
+            <a href="#">Contatos</a>
+        </nav>
+
+
+    </header>
+
+    <main><!--Conteúdo Principal-->
+        <section id="assuntos">
+            <article>
+                <h2>História do Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa neque perspiciatis distinctio vero dolorem amet nostrum quisquam magnam reiciendis ratione dolor repellendus eius voluptates, modi totam, obcaecati architecto quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed eaque nulla officiis commodi quis doloribus, doloremque unde quae eos, amet harum, minima deserunt deleniti. Harum eius iusto quas. Ullam, qui? lorem</p>
+
+                <aside>
+                    Artigo desenvolvido por Pedro Alvares Cabral
+                </aside>
+
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias reiciendis ex, quisquam voluptas repellendus harum amet perferendis tenetur labore eveniet, maxime necessitatibus quidem sed iure qui! Qui animi quisquam cupiditate?</p>
+
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer> <!--Rodapé-->
+        Site desenvolvido por Anderson Bezerra | Desenvolvedor Web
+
+    </footer>
+    <div id="bola"></div>
+    
+</body>
+</html>
